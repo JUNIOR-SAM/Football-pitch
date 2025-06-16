@@ -1,0 +1,84 @@
+/* .body{
+    display: flex;
+    justify-content: center;
+} */
+
+/* .feild{
+    position: absolute;
+    right: 200px;
+} */
+
+.border{
+    height: 40px;
+    border-radius: 10px;
+    padding-left: 20px;
+}
+
+.player{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50px;
+    position: absolute;
+}
+.player img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.player p{
+    font-weight: 600;
+}
+
+.GK{
+    top: 38%;
+    right: 8%;
+}
+.CF{
+    top: 38%;
+    right: 53%;
+}
+.LB{
+    top: 20%;
+    right: 47%;
+}
+
+.CB1{
+    top: 32%;
+    right: 47%;
+}
+
+.CB2{
+    top:43%;
+    right: 47%;
+}
+
+.RB{
+    top:57%;
+    right: 47%;
+}
+
+.CM1{
+    top:28%;
+    right: 31%;
+}
+
+.CM2{
+    top:50%;
+    right: 31%;
+}
+
+.LW {
+    top:20%;
+    right: 25%;
+}
+
+.AM {
+    top:37%;
+    right: 25%;
+}
+
+.RW {
+    top:57%;
+    right: 25%;
+}

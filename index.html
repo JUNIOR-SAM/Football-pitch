@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap.css">
+</head>
+
+<body>
+    <div class="row ">
+        <div class="col-5 mt-5 d-flex flex-column justify-content-center align-items-center"> ">
+            <input type="text" id="playerName" placeholder="Name" class="mt-5 col-5 border border-black border-2">
+            <select name="" id="pos" class="mt-5 col-5 border border-black border-2">
+                <option value="GK">Goalkeeper</option>
+                <option value="CF">Striker</option>
+                <option value="LB">Left Back</option>
+                <option value="CB1">Central Back</option>
+                <option value="CB2">Central Back</option>
+                <option value="RB">Right Back</option>
+                <option value="CM1">Central Middle</option>
+                <option value="CM2">Central Middle</option>
+                <option value="LW">Left Winger</option>
+                <option value="AM">AM</option>
+                <option value="RW">Right Winger</option>
+            </select>
+            <input type="number" id="num" placeholder="Jersey Number" class="mt-5 col-5 border border-black border-2">
+            <button onclick="addPlayer()" class=" btn btn-success mt-5 col-5 border border-black border-2">Add to
+                lineup</button>
+        </div>
+
+        <div style="margin-top: 50px;" class="feild col-5"><img
+                src="IMAGE/WhatsApp Image 2025-06-13 at 22.36.50_733af7bc.jpg" alt="" class="mt-5"></div>
+
+        <div id="show">
+        </div>
+    </div>
+
+    </div>
+    <script>
+        class Players {
+            constructor(pos, named, num) {
+                this.position = pos,
+                    this.name = named
+            }
+        }
+        let playerArray = []
+        const addPlayer = () => {
+            let NewPlayer = new Players(pos.value, playerName.value, num.value)
+            playerArray.push(NewPlayer)
+            show.innerHTML += `
+            <div class="player ${pos.value}">
+                <P>${num.value}</P>
+                <img src="IMAGE/user.png">  
+                <p>${playerName.value}</p>  
+            </div>
+            `
+        }
+
+
+    </script>
+</body>
+
+</html>
